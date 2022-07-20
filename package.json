@@ -1,0 +1,39 @@
+{
+  "name": "playwright-test",
+  "version": "0.1.0",
+  "description": "Playwright test",
+  "main": "dist/index.js",
+  "scripts": {
+    "lnk": "yarn link && cd example && yarn link playwright-test",
+    "start": "npm --prefix ./example start",
+    "install:example": "npm --prefix ./example install",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Forfold/playwright-test.git"
+  },
+  "keywords": [
+    "playwright",
+    "auth"
+  ],
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
+  "types": "dist/index.d.ts",
+  "author": "nathanieljcook@outlook.com",
+  "license": "MIT",
+  "peerDependencies": {
+    "@playwright/test": "1.23.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.23.2",
+    "@types/node": "^17.0.36",
+    "dotenv": "^16.0.1",
+    "pre-commit": "^1.2.2",
+    "standard-version": "^9.3.2",
+    "start-server-and-test": "^1.14.0",
+    "typescript": "^4.6.4"
+  }
+}
